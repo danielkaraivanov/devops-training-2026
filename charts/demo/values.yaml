@@ -1,8 +1,8 @@
 replicaCount: 2
 
 image:
-  repository: nginx
-  tag: "1.27-alpine"
+  repository: danielkaraivanov/simpleapi
+  tag: "0.1"
   pullPolicy: IfNotPresent
 
 service:
