@@ -1,13 +1,16 @@
 replicaCount: 2
 
 image:
-  repository: danielkaraivanov/simpleapi
-  tag: "0.1"
+  repository: danielkaraivanov/simpleapi-demo-2026
+  tag: "latest"
   pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP
   port: 80
+
+container:
+  port: 8080
 
 ingress:
   enabled: false
