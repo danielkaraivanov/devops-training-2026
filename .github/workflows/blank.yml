@@ -7,7 +7,7 @@ env:
   DOCKERHUB_REPO: danielkaraivanov/simpleapi-demo-2026
 
   DOCKER_CONTEXT_PATH: ./src/SimpleApi
-  DOCKERFILE_PATH: ./src/SimpleApi/Dockerfile
+  DOCKERFILE_PATH: ./src/docker-multistage-dotnet/SimpleApi/Dockerfile
 
   CHART_PATH: ./charts/demo
 
