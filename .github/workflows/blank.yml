@@ -9,6 +9,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Build Docker image
+        run: |
+          cd src/docker-multistage-dotnet/SimpleApi
+          docker build -t simpleapi:0.1 .
+          docker tag simpleapi:0.1 danielkaraivanov/simpleapi:0.1
+          docker push danielkaraivanov/simpleapi:0.1
+
       - name: Install kubectl
         run: |
           curl -LO "https://dl.k8s.io/release/v1.34.0/bin/linux/amd64/kubectl"
